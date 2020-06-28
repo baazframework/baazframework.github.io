@@ -93,7 +93,7 @@ t.r(r)
 var a=t(2),o=t(10),i=t(11),n=t(3)
 "undefined"!=typeof reactHotLoaderGlobal&&reactHotLoaderGlobal.default.signature
 Object(o.a)(),Object(i.a)(),Object(n.d)(),self.addEventListener("message",e=>{const{type:r,payload:t}=e.data
-Object(a.a)(r,t,e)})},function(e,r,t){"use strict"
+Object(a.a)(r,t,e)}),self.addEventListener("activate",(function(e){e.waitUntil(caches.keys().then((function(e){return Promise.all(e.filter((function(e){})).map((function(e){return caches.delete(e)})))})))}))},function(e,r,t){"use strict"
 var a,o=this&&this.__extends||(a=function(e,r){return(a=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(e,r){e.__proto__=r}||function(e,r){for(var t in r)r.hasOwnProperty(t)&&(e[t]=r[t])})(e,r)},function(e,r){function __(){this.constructor=e}a(e,r),e.prototype=null===r?Object.create(r):(__.prototype=r.prototype,new __)}),i=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}}
 Object.defineProperty(r,"__esModule",{value:!0})
 var n=t(17),c=i(t(4)),s=i(t(5)),u=i(t(9)),l=i(t(20)),d=i(t(21)),p=i(t(8)),f={div:!0,p:!0,li:!0,td:!0,section:!0,br:!0},m=function(e){function HTMLElement(r,t,a,o){void 0===a&&(a=""),void 0===o&&(o=null)
