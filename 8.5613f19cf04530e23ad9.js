@@ -1,0 +1,15 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{AUOg:function(e,t,n){var o=n("LboF"),a=n("SSVy")
+"string"==typeof(a=a.__esModule?a.default:a)&&(a=[[e.i,a,""]])
+var r={insert:"head",singleton:!1}
+o(a,r)
+e.exports=a.locals||{}},SSVy:function(e,t,n){(t=n("JPst")(!1)).push([e.i,"",""]),e.exports=t},"aqG+":function(e,t,n){"use strict"
+n.r(t)
+var o=n("s1Bu")
+n.d(t,"default",(function(){return o.a}))
+"undefined"!=typeof reactHotLoaderGlobal&&reactHotLoaderGlobal.default.signature},s1Bu:function(e,t,n){"use strict";(function(e){var o,a=n("q1tI"),r=n.n(a),c=(n("AUOg"),n("+ryr")),i=n("ZyRx"),d=n("189T"),l=n("89uu");(o="undefined"!=typeof reactHotLoaderGlobal?reactHotLoaderGlobal.enterModule:void 0)&&o(e)
+"undefined"!=typeof reactHotLoaderGlobal&&reactHotLoaderGlobal.default.signature
+const AccordionUI=e=>r.a.createElement("div",null,r.a.createElement("div",{className:"overview-body"},r.a.createElement("div",{className:"container"},r.a.createElement("h1",null,"Accordion"),r.a.createElement("p",{className:"my-4"}),r.a.createElement("h5",null,"Sample"),r.a.createElement(d.a,null,r.a.createElement(l.a,{title:"First",id:"first"},"First Contents Here"),r.a.createElement(l.a,{title:"Second",id:"second"},"Second Contents Here"),r.a.createElement(l.a,{title:"Third",id:"third"},"Third Contents Here")),r.a.createElement("br",null),r.a.createElement("h5",null,"Code"),r.a.createElement("br",null),r.a.createElement(c.a,{language:"javascript",style:i.a},'\n    import React from \'react\';\n    import { Accordion, Section } from \'buikit/lib/Accordion\';\n    \n    \n    const AccordionUI = props => {\n        return (\n                    <div className="container">\n                        <h1>Accordion</h1>\n    \n                        <Accordion>\n                            <Section title="First" id="first">\n                                First Contents Here\n                            </Section>\n                            <Section title="Second" id="second">\n                                Second Contents Here\n                            </Section>\n                            <Section title="Third" id="third">\n                                Third Contents Here\n                            </Section>\n                        </Accordion>\n                    </div>\n        );\n    };\n    \n    \n    export default AccordionUI;')))),s=AccordionUI
+var u,m
+t.a=s,(u="undefined"!=typeof reactHotLoaderGlobal?reactHotLoaderGlobal.default:void 0)&&(u.register(AccordionUI,"AccordionUI","/home/dominic/projects/baazframeworkdoc/src/components/buikits/Accordion/accordion.js"),u.register(s,"default","/home/dominic/projects/baazframeworkdoc/src/components/buikits/Accordion/accordion.js")),(m="undefined"!=typeof reactHotLoaderGlobal?reactHotLoaderGlobal.leaveModule:void 0)&&m(e)}).call(this,n("3UD+")(e))}}])
+
+//# sourceMappingURL=8.5613f19cf04530e23ad9.js.map
