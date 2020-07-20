@@ -7,12 +7,16 @@ if(4&r&&"object"==typeof e&&e&&e.__esModule)return e
 var t=Object.create(null)
 if(__webpack_require__.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:e}),2&r&&"string"!=typeof e)for(var a in e)__webpack_require__.d(t,a,function(r){return e[r]}.bind(null,a))
 return t},__webpack_require__.n=function(e){var r=e&&e.__esModule?function getDefault(){return e.default}:function getModuleExports(){return e}
-return __webpack_require__.d(r,"a",r),r},__webpack_require__.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},__webpack_require__.p="/",__webpack_require__(__webpack_require__.s=15)}([function(e,r){e.exports=function(e){if(!e.webpackPolyfill){var r=Object.create(e)
+return __webpack_require__.d(r,"a",r),r},__webpack_require__.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},__webpack_require__.p="/",__webpack_require__(__webpack_require__.s=16)}([function(e,r){e.exports=function(e){if(!e.webpackPolyfill){var r=Object.create(e)
 r.children||(r.children=[]),Object.defineProperty(r,"loaded",{enumerable:!0,get:function(){return r.l}}),Object.defineProperty(r,"id",{enumerable:!0,get:function(){return r.i}}),Object.defineProperty(r,"exports",{enumerable:!0}),r.webpackPolyfill=1}return r}},function(e,r,t){"use strict";(function(e){var a
 t.d(r,"c",(function(){return o})),t.d(r,"a",(function(){return i})),t.d(r,"b",(function(){return n})),(a="undefined"!=typeof reactHotLoaderGlobal?reactHotLoaderGlobal.enterModule:void 0)&&a(e)
 "undefined"!=typeof reactHotLoaderGlobal&&reactHotLoaderGlobal.default.signature
 const o=2592e3,i="catalog",n=60
 var c,s;(c="undefined"!=typeof reactHotLoaderGlobal?reactHotLoaderGlobal.default:void 0)&&(c.register(o,"THIRTY_DAYS","/home/dominic/projects/baazframeworkdoc/src/ServiceWorker/defaults.js"),c.register(604800,"ONE_WEEK","/home/dominic/projects/baazframeworkdoc/src/ServiceWorker/defaults.js"),c.register(i,"CATALOG_CACHE_NAME","/home/dominic/projects/baazframeworkdoc/src/ServiceWorker/defaults.js"),c.register(n,"MAX_NUM_OF_IMAGES_TO_CACHE","/home/dominic/projects/baazframeworkdoc/src/ServiceWorker/defaults.js")),(s="undefined"!=typeof reactHotLoaderGlobal?reactHotLoaderGlobal.leaveModule:void 0)&&s(e)}).call(this,t(0)(e))},function(e,r,t){"use strict";(function(e){var a
+t.d(r,"a",(function(){return o})),(a="undefined"!=typeof reactHotLoaderGlobal?reactHotLoaderGlobal.enterModule:void 0)&&a(e)
+"undefined"!=typeof reactHotLoaderGlobal&&reactHotLoaderGlobal.default.signature
+const o="0.1.60"
+var i,n;(i="undefined"!=typeof reactHotLoaderGlobal?reactHotLoaderGlobal.default:void 0)&&i.register(o,"cacheVersion","/home/dominic/projects/baazframeworkdoc/src/constants/constants.js"),(n="undefined"!=typeof reactHotLoaderGlobal?reactHotLoaderGlobal.leaveModule:void 0)&&n(e)}).call(this,t(0)(e))},function(e,r,t){"use strict";(function(e){var a
 t.d(r,"b",(function(){return registerMessageHandler})),t.d(r,"a",(function(){return handleMessageFromClient})),t.d(r,"c",(function(){return sendMessageToWindow})),(a="undefined"!=typeof reactHotLoaderGlobal?reactHotLoaderGlobal.enterModule:void 0)&&a(e)
 "undefined"!=typeof reactHotLoaderGlobal&&reactHotLoaderGlobal.default.signature
 const o={},i=o,registerMessageHandler=(e,r)=>(o[e]||(o[e]=[]),o[e].push(r),()=>unRegisterMessageHandler(e,r)),unRegisterMessageHandler=(e,r)=>{o[e]&&(o[e]=o[e].filter(e=>r!==e))},handleMessageFromClient=(e,r,t)=>{const a=o[e]
@@ -20,7 +24,7 @@ a&&a.forEach(e=>{e(r,t)})},sendMessageToClient=(e,r,t)=>new Promise((a,o)=>{cons
 i.port1.onmessage=e=>{e.data.error?o(e.data.error):a(e.data),i.port1.close()},e&&e.postMessage?e.postMessage({type:r,payload:t},[i.port2]):(o("Unable to send message to "+(e?e.type:"client")),i.port1.close())}),sendMessageToWindow=(e,r)=>clients.matchAll().then(t=>{const[a]=t.filter(e=>"window"===e.type)
 return sendMessageToClient(a,e,r)})
 var n,c;(n="undefined"!=typeof reactHotLoaderGlobal?reactHotLoaderGlobal.default:void 0)&&(n.register(o,"handlers","/home/dominic/projects/baazframeworkdoc/src/ServiceWorker/Utilities/messageHandler.js"),n.register(i,"__handlers__","/home/dominic/projects/baazframeworkdoc/src/ServiceWorker/Utilities/messageHandler.js"),n.register(registerMessageHandler,"registerMessageHandler","/home/dominic/projects/baazframeworkdoc/src/ServiceWorker/Utilities/messageHandler.js"),n.register(unRegisterMessageHandler,"unRegisterMessageHandler","/home/dominic/projects/baazframeworkdoc/src/ServiceWorker/Utilities/messageHandler.js"),n.register(handleMessageFromClient,"handleMessageFromClient","/home/dominic/projects/baazframeworkdoc/src/ServiceWorker/Utilities/messageHandler.js"),n.register(sendMessageToClient,"sendMessageToClient","/home/dominic/projects/baazframeworkdoc/src/ServiceWorker/Utilities/messageHandler.js"),n.register(sendMessageToWindow,"sendMessageToWindow","/home/dominic/projects/baazframeworkdoc/src/ServiceWorker/Utilities/messageHandler.js")),(c="undefined"!=typeof reactHotLoaderGlobal?reactHotLoaderGlobal.leaveModule:void 0)&&c(e)}).call(this,t(0)(e))},function(e,r,t){"use strict";(function(e){t.d(r,"c",(function(){return isResizedCatalogImage})),t.d(r,"b",(function(){return findSameOrLargerImage})),t.d(r,"d",(function(){return registerImagePreFetchHandler})),t.d(r,"a",(function(){return createCatalogCacheHandler}))
-var a,o=t(6),i=t(12),n=t(1),c=t(2);(a="undefined"!=typeof reactHotLoaderGlobal?reactHotLoaderGlobal.enterModule:void 0)&&a(e)
+var a,o=t(7),i=t(13),n=t(1),c=t(3);(a="undefined"!=typeof reactHotLoaderGlobal?reactHotLoaderGlobal.enterModule:void 0)&&a(e)
 "undefined"!=typeof reactHotLoaderGlobal&&reactHotLoaderGlobal.default.signature
 const getWidth=e=>Number(new URLSearchParams(e.search).get("width")),isCatalogImage=({url:e})=>e.pathname.startsWith("/media/catalog"),isResizedCatalogImage=({url:e})=>isCatalogImage({url:e})&&!isNaN(getWidth(e)),findSameOrLargerImage=async e=>{const r=getWidth(e),t=e.pathname.split("/").reverse()[0],a=await caches.open(n.a),o=await a.keys(),i=await o.filter(({url:e})=>e.includes(t))
 let c={difference:1/0,candidate:null}
@@ -40,36 +44,36 @@ t.d(r,"a",(function(){return o})),t.d(r,"b",(function(){return i})),(a="undefine
 const o="HTML_UPDATE_AVAILABLE",i="PREFETCH_IMAGES"
 var n,c;(n="undefined"!=typeof reactHotLoaderGlobal?reactHotLoaderGlobal.default:void 0)&&(n.register(o,"HTML_UPDATE_AVAILABLE","/home/dominic/projects/baazframeworkdoc/src/constants/swMessageTypes.js"),n.register(i,"PREFETCH_IMAGES","/home/dominic/projects/baazframeworkdoc/src/constants/swMessageTypes.js")),(c="undefined"!=typeof reactHotLoaderGlobal?reactHotLoaderGlobal.leaveModule:void 0)&&c(e)}).call(this,t(0)(e))},function(e,r,t){"use strict"
 Object.defineProperty(r,"__esModule",{value:!0})
-var a=t(8)
+var a=t(9)
 r.CommentNode=a.default
-var o=t(16)
+var o=t(17)
 r.HTMLElement=o.default,r.parse=o.parse,r.default=o.parse
-var i=t(4)
+var i=t(5)
 r.Node=i.default
-var n=t(9)
+var n=t(10)
 r.TextNode=n.default
-var c=t(5)
+var c=t(6)
 r.NodeType=c.default},function(e,r,t){"use strict"
 var a,o=this&&this.__extends||(a=function(e,r){return(a=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(e,r){e.__proto__=r}||function(e,r){for(var t in r)r.hasOwnProperty(t)&&(e[t]=r[t])})(e,r)},function(e,r){function __(){this.constructor=e}a(e,r),e.prototype=null===r?Object.create(r):(__.prototype=r.prototype,new __)}),i=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}}
 Object.defineProperty(r,"__esModule",{value:!0})
-var n=i(t(4)),c=i(t(5)),s=function(e){function CommentNode(r){var t=e.call(this)||this
+var n=i(t(5)),c=i(t(6)),s=function(e){function CommentNode(r){var t=e.call(this)||this
 return t.nodeType=c.default.COMMENT_NODE,t.rawText=r,t}return o(CommentNode,e),Object.defineProperty(CommentNode.prototype,"text",{get:function(){return this.rawText},enumerable:!0,configurable:!0}),CommentNode.prototype.toString=function(){return"\x3c!--"+this.rawText+"--\x3e"},CommentNode}(n.default)
 r.default=s},function(e,r,t){"use strict"
 var a,o=this&&this.__extends||(a=function(e,r){return(a=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(e,r){e.__proto__=r}||function(e,r){for(var t in r)r.hasOwnProperty(t)&&(e[t]=r[t])})(e,r)},function(e,r){function __(){this.constructor=e}a(e,r),e.prototype=null===r?Object.create(r):(__.prototype=r.prototype,new __)}),i=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}}
 Object.defineProperty(r,"__esModule",{value:!0})
-var n=i(t(5)),c=function(e){function TextNode(r){var t=e.call(this)||this
-return t.nodeType=n.default.TEXT_NODE,t.rawText=r,t}return o(TextNode,e),Object.defineProperty(TextNode.prototype,"text",{get:function(){return this.rawText},enumerable:!0,configurable:!0}),Object.defineProperty(TextNode.prototype,"isWhitespace",{get:function(){return/^(\s|&nbsp;)*$/.test(this.rawText)},enumerable:!0,configurable:!0}),TextNode.prototype.toString=function(){return this.text},TextNode}(i(t(4)).default)
+var n=i(t(6)),c=function(e){function TextNode(r){var t=e.call(this)||this
+return t.nodeType=n.default.TEXT_NODE,t.rawText=r,t}return o(TextNode,e),Object.defineProperty(TextNode.prototype,"text",{get:function(){return this.rawText},enumerable:!0,configurable:!0}),Object.defineProperty(TextNode.prototype,"isWhitespace",{get:function(){return/^(\s|&nbsp;)*$/.test(this.rawText)},enumerable:!0,configurable:!0}),TextNode.prototype.toString=function(){return this.text},TextNode}(i(t(5)).default)
 r.default=c},function(e,r,t){"use strict";(function(e){var t;(t="undefined"!=typeof reactHotLoaderGlobal?reactHotLoaderGlobal.enterModule:void 0)&&t(e)
 "undefined"!=typeof reactHotLoaderGlobal&&reactHotLoaderGlobal.default.signature
 const _default=function(){importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js"),workbox.core.skipWaiting(),workbox.core.clientsClaim(),workbox.precaching.precacheAndRoute(self.__precacheManifest||[])}
 var a,o
-r.a=_default,(a="undefined"!=typeof reactHotLoaderGlobal?reactHotLoaderGlobal.default:void 0)&&a.register(_default,"default","/home/dominic/projects/baazframeworkdoc/src/ServiceWorker/setupWorkbox.js"),(o="undefined"!=typeof reactHotLoaderGlobal?reactHotLoaderGlobal.leaveModule:void 0)&&o(e)}).call(this,t(0)(e))},function(e,r,t){"use strict";(function(e){var a,o=t(3),i=t(13),n=t(1),c=t(14);(a="undefined"!=typeof reactHotLoaderGlobal?reactHotLoaderGlobal.enterModule:void 0)&&a(e)
+r.a=_default,(a="undefined"!=typeof reactHotLoaderGlobal?reactHotLoaderGlobal.default:void 0)&&a.register(_default,"default","/home/dominic/projects/baazframeworkdoc/src/ServiceWorker/setupWorkbox.js"),(o="undefined"!=typeof reactHotLoaderGlobal?reactHotLoaderGlobal.leaveModule:void 0)&&o(e)}).call(this,t(0)(e))},function(e,r,t){"use strict";(function(e){var a,o=t(4),i=t(14),n=t(1),c=t(15),s=t(2);(a="undefined"!=typeof reactHotLoaderGlobal?reactHotLoaderGlobal.enterModule:void 0)&&a(e)
 "undefined"!=typeof reactHotLoaderGlobal&&reactHotLoaderGlobal.default.signature
 const _default=function(){const e=Object(o.a)()
 workbox.routing.registerRoute(new RegExp("(robots.txt|favicon.ico|manifest.json)"),new workbox.strategies.StaleWhileRevalidate),workbox.routing.registerRoute(o.c,({url:r,request:t,event:a})=>{const i=Object(o.b)(r,t)
-return a.waitUntil(i),i.then(r=>r||e.handle({request:t,event:a}))}),workbox.routing.registerRoute(/\.(?:png|gif|jpg|jpeg|webp|svg)$/,new workbox.strategies.CacheFirst({cacheName:"images",plugins:[new workbox.expiration.Plugin({maxEntries:n.b,maxAgeSeconds:n.c})]})),workbox.routing.registerRoute(new RegExp(/\.js$/),new workbox.strategies.CacheFirst({cacheName:"js"})),workbox.routing.registerRoute(new RegExp(/\.css$/),new workbox.strategies.CacheFirst({cacheName:"css",plugins:[new workbox.expiration.Plugin({maxAgeSeconds:n.c})]})),workbox.routing.registerRoute(({url:e})=>Object(i.a)(e),new workbox.strategies.StaleWhileRevalidate({plugins:[c.a]}))}
-var s,u
-r.a=_default,(s="undefined"!=typeof reactHotLoaderGlobal?reactHotLoaderGlobal.default:void 0)&&s.register(_default,"default","/home/dominic/projects/baazframeworkdoc/src/ServiceWorker/registerRoutes.js"),(u="undefined"!=typeof reactHotLoaderGlobal?reactHotLoaderGlobal.leaveModule:void 0)&&u(e)}).call(this,t(0)(e))},function(e,r,t){"use strict";(function(e){var a
+return a.waitUntil(i),i.then(r=>r||e.handle({request:t,event:a}))}),workbox.routing.registerRoute(/\.(?:png|gif|jpg|jpeg|webp|svg)$/,new workbox.strategies.CacheFirst({cacheName:"images-"+s.a,plugins:[new workbox.expiration.Plugin({maxEntries:n.b,maxAgeSeconds:n.c})]})),workbox.routing.registerRoute(new RegExp(/\.js$/),new workbox.strategies.CacheFirst({cacheName:"js-"+s.a})),workbox.routing.registerRoute(new RegExp(/\.css$/),new workbox.strategies.CacheFirst({cacheName:"css-"+s.a,plugins:[new workbox.expiration.Plugin({maxAgeSeconds:n.c})]})),workbox.routing.registerRoute(({url:e})=>Object(i.a)(e),new workbox.strategies.StaleWhileRevalidate({plugins:[c.a]}))}
+var u,l
+r.a=_default,(u="undefined"!=typeof reactHotLoaderGlobal?reactHotLoaderGlobal.default:void 0)&&u.register(_default,"default","/home/dominic/projects/baazframeworkdoc/src/ServiceWorker/registerRoutes.js"),(l="undefined"!=typeof reactHotLoaderGlobal?reactHotLoaderGlobal.leaveModule:void 0)&&l(e)}).call(this,t(0)(e))},function(e,r,t){"use strict";(function(e){var a
 t.d(r,"a",(function(){return isFastNetwork})),(a="undefined"!=typeof reactHotLoaderGlobal?reactHotLoaderGlobal.enterModule:void 0)&&a(e)
 "undefined"!=typeof reactHotLoaderGlobal&&reactHotLoaderGlobal.default.signature
 const isFastNetwork=()=>!navigator.connection||!("effectiveType"in navigator.connection)||"4g"===navigator.connection.effectiveType
@@ -78,7 +82,7 @@ t.d(r,"a",(function(){return isHTMLRoute})),(a="undefined"!=typeof reactHotLoade
 "undefined"!=typeof reactHotLoaderGlobal&&reactHotLoaderGlobal.default.signature
 const isHomeRoute=e=>"/"===e.pathname,isHTMLRoute=e=>isHomeRoute(e)||new RegExp(".html$").test(e.pathname)
 var o,i;(o="undefined"!=typeof reactHotLoaderGlobal?reactHotLoaderGlobal.default:void 0)&&(o.register(isHomeRoute,"isHomeRoute","/home/dominic/projects/baazframeworkdoc/src/ServiceWorker/Utilities/routeHandler.js"),o.register(isHTMLRoute,"isHTMLRoute","/home/dominic/projects/baazframeworkdoc/src/ServiceWorker/Utilities/routeHandler.js")),(i="undefined"!=typeof reactHotLoaderGlobal?reactHotLoaderGlobal.leaveModule:void 0)&&i(e)}).call(this,t(0)(e))},function(e,r,t){"use strict";(function(e){t.d(r,"a",(function(){return s}))
-var a,o=t(6),i=t(7),n=t(2);(a="undefined"!=typeof reactHotLoaderGlobal?reactHotLoaderGlobal.enterModule:void 0)&&a(e)
+var a,o=t(7),i=t(8),n=t(3);(a="undefined"!=typeof reactHotLoaderGlobal?reactHotLoaderGlobal.enterModule:void 0)&&a(e)
 "undefined"!=typeof reactHotLoaderGlobal&&reactHotLoaderGlobal.default.signature
 const generateScriptResource=e=>e.attributes.src,generateLinkResource=e=>e.attributes.href,generateStyleResource=e=>e.text,identity=e=>e,generateResources=e=>{const r={}
 return r.scripts=e.querySelectorAll("script").map(generateScriptResource).filter(identity).sort(),r.links=e.querySelectorAll("link").map(generateLinkResource).filter(identity).sort(),r.styles=e.querySelectorAll("style").map(generateStyleResource).filter(identity).sort(),r},haveResourcesChanged=(e,r)=>{const t=generateResources(e),a=generateResources(r)
@@ -90,13 +94,14 @@ if(t){const e=await t.text(),a=await r.clone().text()
 a!==e&&hasHTMLChanged(Object(i.parse)(a,{style:!0}),Object(i.parse)(e,{style:!0}))&&Object(n.c)(o.a)}return r}}
 var u,l;(u="undefined"!=typeof reactHotLoaderGlobal?reactHotLoaderGlobal.default:void 0)&&(u.register(generateScriptResource,"generateScriptResource","/home/dominic/projects/baazframeworkdoc/src/ServiceWorker/Utilities/htmlHandler.js"),u.register(generateLinkResource,"generateLinkResource","/home/dominic/projects/baazframeworkdoc/src/ServiceWorker/Utilities/htmlHandler.js"),u.register(generateStyleResource,"generateStyleResource","/home/dominic/projects/baazframeworkdoc/src/ServiceWorker/Utilities/htmlHandler.js"),u.register(identity,"identity","/home/dominic/projects/baazframeworkdoc/src/ServiceWorker/Utilities/htmlHandler.js"),u.register(generateResources,"generateResources","/home/dominic/projects/baazframeworkdoc/src/ServiceWorker/Utilities/htmlHandler.js"),u.register(haveResourcesChanged,"haveResourcesChanged","/home/dominic/projects/baazframeworkdoc/src/ServiceWorker/Utilities/htmlHandler.js"),u.register(hasTitleChanged,"hasTitleChanged","/home/dominic/projects/baazframeworkdoc/src/ServiceWorker/Utilities/htmlHandler.js"),u.register(hasBackendUrlChanged,"hasBackendUrlChanged","/home/dominic/projects/baazframeworkdoc/src/ServiceWorker/Utilities/htmlHandler.js"),u.register(hasImageOptimizingOriginChanged,"hasImageOptimizingOriginChanged","/home/dominic/projects/baazframeworkdoc/src/ServiceWorker/Utilities/htmlHandler.js"),u.register(c,"verificationFunctions","/home/dominic/projects/baazframeworkdoc/src/ServiceWorker/Utilities/htmlHandler.js"),u.register(hasHTMLChanged,"hasHTMLChanged","/home/dominic/projects/baazframeworkdoc/src/ServiceWorker/Utilities/htmlHandler.js"),u.register(cloneRequestWithDiffURL,"cloneRequestWithDiffURL","/home/dominic/projects/baazframeworkdoc/src/ServiceWorker/Utilities/htmlHandler.js"),u.register(s,"cacheHTMLPlugin","/home/dominic/projects/baazframeworkdoc/src/ServiceWorker/Utilities/htmlHandler.js")),(l="undefined"!=typeof reactHotLoaderGlobal?reactHotLoaderGlobal.leaveModule:void 0)&&l(e)}).call(this,t(0)(e))},function(e,r,t){"use strict"
 t.r(r)
-var a=t(2),o=t(10),i=t(11),n=t(3)
+var a=t(3),o=t(11),i=t(12),n=t(4),c=t(2)
 "undefined"!=typeof reactHotLoaderGlobal&&reactHotLoaderGlobal.default.signature
 Object(o.a)(),Object(i.a)(),Object(n.d)(),self.addEventListener("message",e=>{const{type:r,payload:t}=e.data
-Object(a.a)(r,t,e)}),self.addEventListener("activate",(function(e){e.waitUntil(caches.keys().then((function(e){return Promise.all(e.filter((function(e){})).map((function(e){return caches.delete(e)})))})))}))},function(e,r,t){"use strict"
+Object(a.a)(r,t,e)}),self.addEventListener("activate",(function(e){var r=[`workbox-runtime-${location.origin}/-${c.a}-${location.origin}/`,`images-${c.a}-${location.origin}/`,`css-${c.a}-${location.origin}/`,"js-"+c.a]
+e.waitUntil(caches.keys().then((function(e){return Promise.all(e.map((function(e){if(-1===r.indexOf(e))return caches.delete(e)})))})))}))},function(e,r,t){"use strict"
 var a,o=this&&this.__extends||(a=function(e,r){return(a=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(e,r){e.__proto__=r}||function(e,r){for(var t in r)r.hasOwnProperty(t)&&(e[t]=r[t])})(e,r)},function(e,r){function __(){this.constructor=e}a(e,r),e.prototype=null===r?Object.create(r):(__.prototype=r.prototype,new __)}),i=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}}
 Object.defineProperty(r,"__esModule",{value:!0})
-var n=t(17),c=i(t(4)),s=i(t(5)),u=i(t(9)),l=i(t(20)),d=i(t(21)),p=i(t(8)),f={div:!0,p:!0,li:!0,td:!0,section:!0,br:!0},m=function(e){function HTMLElement(r,t,a,o){void 0===a&&(a=""),void 0===o&&(o=null)
+var n=t(18),c=i(t(5)),s=i(t(6)),u=i(t(10)),l=i(t(21)),d=i(t(22)),p=i(t(9)),f={div:!0,p:!0,li:!0,td:!0,section:!0,br:!0},m=function(e){function HTMLElement(r,t,a,o){void 0===a&&(a=""),void 0===o&&(o=null)
 var i=e.call(this)||this
 if(i.tagName=r,i.rawAttrs=a,i.parentNode=o,i.classNames=[],i.nodeType=s.default.ELEMENT_NODE,i.rawAttrs=a||"",i.parentNode=o||null,i.childNodes=[],t.id&&(i.id=t.id,a||(i.rawAttrs='id="'+t.id+'"')),t.class&&(i.classNames=t.class.split(/\s+/),!a)){var n='class="'+i.classNames.join(" ")+'"'
 i.rawAttrs?i.rawAttrs+=" "+n:i.rawAttrs=n}return i}return o(HTMLElement,e),HTMLElement.prototype.removeChild=function(e){this.childNodes=this.childNodes.filter((function(r){return r!==e}))},HTMLElement.prototype.exchangeChild=function(e,r){for(var t=-1,a=0;a<this.childNodes.length;a++)if(this.childNodes[a]===e){t=a
@@ -186,7 +191,7 @@ return t&&h.test(e)&&parseError("malformed character reference"),e.replace(b,(fu
 return a?(p=a,d=o,t&&!d&&parseError("character reference was not terminated by a semicolon"),l=parseInt(p,10),codePointToSymbol(l,t)):i?(f=i,d=n,t&&!d&&parseError("character reference was not terminated by a semicolon"),l=parseInt(f,16),codePointToSymbol(l,t)):c?has(v,m=c)?v[m]:(t&&parseError("named character reference was not terminated by a semicolon"),e):(m=s,(h=u)&&r.isAttributeValue?(t&&"="==h&&parseError("`&` did not start a character reference"),e):(t&&parseError("named character reference was not terminated by a semicolon"),y[m]+(h||"")))}))}
 decode.options={isAttributeValue:!1,strict:!1}
 var q={version:"1.1.1",encode,decode,escape:function(e){return e.replace(f,(function(e){return m[e]}))},unescape:decode}
-void 0===(o=function(){return q}.call(r,t,r,e))||(e.exports=o)}()}).call(this,t(18)(e),t(19))},function(e,r){e.exports=function(e){return e.webpackPolyfill||(e.deprecate=function(){},e.paths=[],e.children||(e.children=[]),Object.defineProperty(e,"loaded",{enumerable:!0,get:function(){return e.l}}),Object.defineProperty(e,"id",{enumerable:!0,get:function(){return e.i}}),e.webpackPolyfill=1),e}},function(e,r){var t
+void 0===(o=function(){return q}.call(r,t,r,e))||(e.exports=o)}()}).call(this,t(19)(e),t(20))},function(e,r){e.exports=function(e){return e.webpackPolyfill||(e.deprecate=function(){},e.paths=[],e.children||(e.children=[]),Object.defineProperty(e,"loaded",{enumerable:!0,get:function(){return e.l}}),Object.defineProperty(e,"id",{enumerable:!0,get:function(){return e.i}}),e.webpackPolyfill=1),e}},function(e,r){var t
 t=function(){return this}()
 try{t=t||new Function("return this")()}catch(e){"object"==typeof window&&(t=window)}e.exports=t},function(e,r,t){"use strict"
 Object.defineProperty(r,"__esModule",{value:!0})
