@@ -15,7 +15,7 @@ const o=2592e3,i="catalog",n=60
 var c,s;(c="undefined"!=typeof reactHotLoaderGlobal?reactHotLoaderGlobal.default:void 0)&&(c.register(o,"THIRTY_DAYS","/home/dominic/projects/baazframeworkdoc/src/ServiceWorker/defaults.js"),c.register(604800,"ONE_WEEK","/home/dominic/projects/baazframeworkdoc/src/ServiceWorker/defaults.js"),c.register(i,"CATALOG_CACHE_NAME","/home/dominic/projects/baazframeworkdoc/src/ServiceWorker/defaults.js"),c.register(n,"MAX_NUM_OF_IMAGES_TO_CACHE","/home/dominic/projects/baazframeworkdoc/src/ServiceWorker/defaults.js")),(s="undefined"!=typeof reactHotLoaderGlobal?reactHotLoaderGlobal.leaveModule:void 0)&&s(e)}).call(this,t(0)(e))},function(e,r,t){"use strict";(function(e){var a
 t.d(r,"a",(function(){return o})),(a="undefined"!=typeof reactHotLoaderGlobal?reactHotLoaderGlobal.enterModule:void 0)&&a(e)
 "undefined"!=typeof reactHotLoaderGlobal&&reactHotLoaderGlobal.default.signature
-const o="0.1.60"
+const o="0.1.0"
 var i,n;(i="undefined"!=typeof reactHotLoaderGlobal?reactHotLoaderGlobal.default:void 0)&&i.register(o,"cacheVersion","/home/dominic/projects/baazframeworkdoc/src/constants/constants.js"),(n="undefined"!=typeof reactHotLoaderGlobal?reactHotLoaderGlobal.leaveModule:void 0)&&n(e)}).call(this,t(0)(e))},function(e,r,t){"use strict";(function(e){var a
 t.d(r,"b",(function(){return registerMessageHandler})),t.d(r,"a",(function(){return handleMessageFromClient})),t.d(r,"c",(function(){return sendMessageToWindow})),(a="undefined"!=typeof reactHotLoaderGlobal?reactHotLoaderGlobal.enterModule:void 0)&&a(e)
 "undefined"!=typeof reactHotLoaderGlobal&&reactHotLoaderGlobal.default.signature
